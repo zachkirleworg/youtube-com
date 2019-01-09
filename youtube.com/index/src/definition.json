@@ -1,0 +1,39 @@
+{
+  "name" : "index",
+  "title" : "YouTube",
+  "uri" : "youtube.com",
+  "userInterface" : {
+    "themeName" : "mediaBlog",
+    "resourcesHost" : "https://bc.marfeelcache.com",
+    "lang" : "en",
+    "features" : {
+      "useMetricsJson" : true,
+      "useUiJson" : true,
+      "forceXL" : true,
+      "socialSharing" : "facebook, twitter, email, whatsapp",
+      "nativeAdvInDetails" : true,
+      "lateralMenuSearch" : true,
+      "disableImagesReverseProxy" : true,
+      "twisterJavaEnabled" : true
+    }
+  },
+  "configuration" : {
+    "quartzInvalidation" : "true",
+    "feedRipper" : "marfeelPressRipper",
+    "marfeelPressToken" : "rfioerogirigogo4rhoergergruifrebfribf3",
+    "boilerpipeFetcher" : "marfeelPressFetcher",
+    "detailItemsProcessor" : "throttledDetailItemsProcessor"
+  },
+  "sectionDefinitions" : [ {
+    "name" : "home",
+    "styles" : "photo",
+    "title" : "Home",
+    "feedDefinitions" : [ {
+      "uri" : "http://www.youtube.com",
+      "alibabaDefinition" : { }
+    } ],
+    "configuration" : {
+      "cronRefresh" : "0 0/3 * 1/1 * ? *"
+    }
+  } ]
+}
